@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+#header .container{
+    overflow: hidden;
+}
+
+#header.active{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(40, 167, 69,.95) !important;
+}
+
+#header.active .navbar .navbar-brand h2#brandName{
+    color: #fff !important;
+}
+
+#header.active .navbar #myNavbar .navbar-nav .nav-item .nav-link{
+    color: #fff !important;
+}
+
+#Home,
+#About,
+#Services,
+#Skills,
+#Projects{
+    margin-bottom:150px;
+    overflow: hidden;
+}
+
+#Home .container,
+#About .container,
+#Services .container,
+#Skills .container,
+#Projects .container,
+#Contact .container{
+    overflow: hidden;
+}
+
+#Contact{
+    margin-bottom:50px;
+    overflow: hidden;
+}
+
+#brandName span:first-child{
+    line-height: 10px;
+    font-size:35px;
+    font-weight:bold;
+}
+
+#brandName span:last-child{
+    font-size: 15px;
+    font-weight: normal;
+    line-height:0px;
+}
+
+.navbar .navbar-nav .nav-item a{
+    color: #6c757d;
+    transition: .30s;
+}
+
+.navbar .navbar-nav .nav-item a:hover{
+    color: #28A745;
+}
+
+#intro h1,
+#intro h3{
+    line-height:40px;
+    text-transform: capitalize;
+}
+
+#intro h1{
+    font-weight: bold;
+    
+}
+
+#intro h3{
+    font-size:25px;
+}
+
+#img{
+    height:350px;
+    aspect-ratio: 1;
+    border: 5px solid #28A745;
+    border-radius: 50%;
+    background-image: url('../img/ssss.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services #servicesBox i{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#services #servicesBox h1{
+    font-size:26px;
+    text-transform: capitalize;
+}
+
+#card-container #card-container-row #card .card-body h2{
+    font-size: 25px;
+}
+
+#form-container #form .form-group input{
+    border-radius:0;
+}
+
+#form-container #form .form-group textarea{
+    min-height: 200px;
+    resize: none;
+    border-radius:0;
+}
+
+@media screen and (max-width:992px) {
+    #intro-section #img-container #img{
+        height: 300px;
+        aspect-ratio: 1;
+    }
+
+    #header .navbar #logoImg{
+        height: 45px !important;
+    }
+    #header .navbar #brandName .mt-1{
+        font-size:25px;
+    }
+}
+
+@media  screen and (max-width:767px) {
+    #intro-section #img-container #img{
+        height: 220px;
+    }
+}
+
